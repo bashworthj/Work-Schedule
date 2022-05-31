@@ -1,7 +1,8 @@
 var dayAndTime= moment().format('MMMM Do YYYY, h:mm:ss a')
 $('#currentDay').html(dayAndTime);
 
-$('button').addClass("saveBtn", "saveBtn i:hover");
+$('button').addClass("saveBtn");
+$('textarea').addClass("textarea");
 
 
 $(".table").each(function(){
@@ -12,7 +13,7 @@ $(".table").each(function(){
        $(this).addClass("past");
        $(this).removeClass("present");
        $(this).removeClass("future");
-   } if (colorDisplay === time){
+   } else if (colorDisplay === time){
         $(this).removeClass("past");
         $(this).addClass("present");
         $(this).removeClass("future");
