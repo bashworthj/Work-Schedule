@@ -1,13 +1,13 @@
 var dayAndTime= moment().format('MMMM Do YYYY, h:mm:ss a')
 $('#currentDay').html(dayAndTime);
-
+var time = moment().hour();
 $('button').addClass("saveBtn");
 $('textarea').addClass("textarea");
 
 
-$(".table").each(function(){
-    var time = moment().hour();
-    var colorDisplay = parseInt($(this));
+$(".time-todo").each(function(){
+
+    var colorDisplay = parseInt($(this).attr("id"));
 
    if (colorDisplay < time){
        $(this).addClass("past");
