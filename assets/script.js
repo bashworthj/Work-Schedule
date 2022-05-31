@@ -1,8 +1,8 @@
 var dayAndTime= moment().format('MMMM Do YYYY, h:mm:ss a')
-$('#currentDay').html(dayAndTime);
+$('#currentDay').text(dayAndTime);
 var time = moment().hour();
-$('button').addClass("saveBtn");
-$('textarea').addClass("textarea");
+// $('button').addClass("saveBtn");
+// $('textarea').addClass("textarea");
 
 
 $(".time-todo").each(function(){
@@ -25,3 +25,8 @@ $(".time-todo").each(function(){
    }
 
 })
+
+// setInterval(function(){
+//     dayAndTime()
+
+// })
