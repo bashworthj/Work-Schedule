@@ -32,7 +32,7 @@ $(".saveBtn").on('click', function () {
     var whenD = parseInt($(this).attr("id"));
 
     localStorage.setItem(inputD, whenD);
-    
+    $(this).find('textarea').text(inputD);
     
 
 });
@@ -45,6 +45,6 @@ $(".time-todo").each(function () {
     var stored = parseInt($(this).attr("id"));
     localStorage.getItem(stored);
     if (stored !== null) {
-        $(this).find('textarea').text(stored);
+        $(this).find('textarea').text("add todo");
     }
 });
