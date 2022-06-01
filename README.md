@@ -13,7 +13,7 @@
 
 
 ## Visuals
-![Screen Shot]()
+![Screen Shot](./assets/Workduler.png)
 
 ## Authors and Acknowledgement
 - Ben Ashworth
