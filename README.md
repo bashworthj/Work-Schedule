@@ -19,7 +19,7 @@
 - Ben Ashworth
 
 ## Resources
-[Repo Link]() 
+[Repo Link](https://github.com/bashworthj/Work-Schedule) 
 
-[Live Site]()
+[Live Site](https://bashworthj.github.io/Work-Schedule/)
  

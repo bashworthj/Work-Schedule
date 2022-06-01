@@ -1,9 +1,11 @@
+// using moment i captured the cureent date and time and then posted directly to page using j query.
 var dayAndTime = moment().format('MMMM Do YYYY, h:mm:ss a')
 $('#currentDay').text(dayAndTime);
 var time = moment().hour();
 
 
-
+//created this function to compare the created time slots against the curennt time classify them
+//with the desired styling.
 $(".time-todo").each(function () {
 
     var colorDisplay = parseInt($(this).attr("id"));
@@ -24,7 +26,7 @@ $(".time-todo").each(function () {
     }
 
 })
-
+// when clicked, every save button related text value will be saved as well as its related time value.
 $(".saveBtn").on('click', function () {
     var inputD = $(this).siblings(".todo").val();
     var whenD = parseInt($(this).attr("id"));
